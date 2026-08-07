@@ -1,5 +1,5 @@
 import { Router } from "express";
-import { authCallback } from "../controllers/suth.controller.js";
+import { authCallback } from "../controllers/auth.controller.js";
 const router = Router();
 
 router.post("/callback", authCallback);
