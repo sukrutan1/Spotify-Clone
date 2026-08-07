@@ -26,8 +26,8 @@ export const createSong = async (req, res, next) => {
     const audioFile = req.files.audio;
     const imageFile = req.files.image;
 
-    const audioUrl = uploadToCloudinary(audiofile);
-    const imageUrl = uploadToCloudinary(imagefile);
+    const audioUrl = uploadToCloudinary(audioFile);
+    const imageUrl = uploadToCloudinary(imageFile);
 
     const song = new Song({
       title,
